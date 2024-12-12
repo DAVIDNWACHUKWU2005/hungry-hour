@@ -19,9 +19,11 @@
     margin-inline: auto;
 }
 .float-right{
-    float: left;
+    float: right;
 }
-
+.hidden{
+    display: none;
+}
 .margin-top-20px{
     margin-top: 20px;
 }
@@ -30,6 +32,9 @@ font-size: 40px;
 }
 .gap-20{
     gap: 20px;
+}
+.transparent{
+    color: transparent;
 }
 body {
     font-family: "poppins", sans-serif;
@@ -104,12 +109,26 @@ button{
   font-family: "Nunito", serif;
   color:var(--app-off-white);
   font-weight: 700;
+  width: 200px;
   border-radius: 8px;
 background-color: var(--app-yellow);
 transition: 0.3 ease-in-out;
 
+justify-self: center;
 }
 button:hover{
     transform: scale(1.05);
  
 }
+#map {
+    width: 400px;
+margin-top: 40px;
+    height: 200px;
+    border: 1px solid #ddd;
+  }
+  .map-container{
+    justify-content: space-between;
+  }
+  .fa-location-dot{
+ color: transparent;
+  }
