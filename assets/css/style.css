@@ -7,28 +7,11 @@
 :root {
     
     --app-hero-banner-background-light-blue-to-dark-blue: linear-gradient(to right,	#00FFFF, darkblue );
-    --app-white: #fff;
-    --app-blue: #00549A;
-    --app-light-blue:#5490cd;
-    --app-dark-blue: #00FFFF;
-    --app-background-color: #edf1f5;
-    --app-line-border-color: #ddd;
-    --app-gray: #f9f9f9;
-    --app-items-border-color: #000;
-    --app-detail-font-color: #555;
-    --app-detail-primary-font-color: #00549A;
-    --app-detail-button-hover-bg-color: #00549a;
-    --app-detail-button-bg-color: #003778;
-    --app-detail-button-font-color: #fff;
-    --app-footer-bg-color: #655f5f;
-    --app-footer-height: 70px;
-    --app-footer-socials-color: #001f3d;
-    --app-purple: #800080;
-    --app-light-pink: #ffc0cb;
-    --app-red-output: #ff0000;
-    --app-body-bg: #333333;
-    --app-product-border: #f5f5f5;
+    --app-red:#C33332;
+    --app-hero-banner-background: #f5f5f5;
     --app-hero-banner-degraded: linear-gradient(to right,	#baf8f8, darkblue );
+    --app-yellow:#FBEC5D;
+    --app-off-white:	#FAF9F6;
 }
 
 .container {
@@ -39,6 +22,15 @@
     float: left;
 }
 
+.margin-top-20px{
+    margin-top: 20px;
+}
+.fourty-px{
+font-size: 40px;
+}
+.gap-20{
+    gap: 20px;
+}
 body {
     font-family: "poppins", sans-serif;
     background-color: var(--app-background-color);
@@ -50,10 +42,11 @@ body {
 
 .flex {
     display: flex;
-}
+} 
 
-.grid {
+.grid-center {
     display: grid;
+    place-self: center;
 }
 
 .flex-between {
@@ -66,4 +59,57 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.logo{
+    font-family: "Racing Sans One", sans-serif;
+    color:var(--app-red);
+    font-weight:bold;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.hero-banner{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    height: 80svh;
+    background-image: url(../imgs/hero-banner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.list{
+    font-family: "Nunito", serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    display:flex;
+    z-index: 20;
+}
+
+li:hover{
+ transform: scale(1.1);
+ transition: 0.1s ease-in-out;
+ cursor: pointer;
+}
+button{
+  position: relative;
+    background-color: #f5f5f5;
+  text-align: center;
+  top:80%;
+  padding: 16px;
+  font-size: 20px;
+  font-family: "Nunito", serif;
+  color:var(--app-off-white);
+  font-weight: 700;
+  border-radius: 8px;
+background-color: var(--app-yellow);
+transition: 0.3 ease-in-out;
+
+}
+button:hover{
+    transform: scale(1.05);
+ 
 }
