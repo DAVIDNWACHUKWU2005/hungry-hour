@@ -22,7 +22,8 @@ const map = new mapboxgl.Map({
       essential: true 
     });
   }
-
+  locationIcon.style.opacity = "1";
+  
   const accuracy = {
     enableHighAccuracy: true
   };

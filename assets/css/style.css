@@ -129,6 +129,13 @@ margin-top: 40px;
   .map-container{
     justify-content: space-between;
   }
-  .fa-location-dot{
- color: transparent;
+  #locationIcon {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: red;
+    opacity: 0; /* Initially hidden */
+    z-index: 10;
   }
